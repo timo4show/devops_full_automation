@@ -10,10 +10,10 @@ pipeline {
         WORKSPACE = "${env.WORKSPACE}"
     }
 
-    // tools {
-    //     maven 'localMaven'
-    //     jdk 'localJdk'
-    // }
+    tools {
+        maven 'maven'
+        jdk 'jdk'
+    }
 
     stages {
         stage('Git checkout') {
